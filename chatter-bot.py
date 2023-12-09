@@ -50,7 +50,7 @@ def chat_bot():
 				print("Bot: Thanks! I learned a new response!")
 
 
-if __name__ == 'main':
+if __name__ == '__main__':
 	chat_bot()
 
 
