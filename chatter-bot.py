@@ -23,7 +23,7 @@ def find_best_match(user_question: str, questions: list[str]) -> str | None:
 
 def get_answer_from_question(question: str, knowledge_base: dict) -> str | None:
 	for q in knowledge_base['question']:
-		if q['question'] = question:
+		if q['question'] == question:
 			return q['answer']
 
 def chat_bot():
@@ -32,7 +32,7 @@ def chat_bot():
 	while True:
 		user_input: str = input("You: ")
 
-		if user_input.lower() = "quit":
+		if user_input.lower() == "quit":
 			break
 
 		best_match: str | None = find_best_match(user_input,[q["question"] for q in knowledge_base["questions"]])
