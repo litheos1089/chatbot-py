@@ -1,5 +1,6 @@
 import streamlit as st
-
+import random
+import time
 
 
 # A simple Hello World Message
@@ -34,7 +35,7 @@ if prompt := st.chat_input("What is up?"):
 	response = f"Echo: {prompt}"
     # Display assistant response in chat message container
 
-	with st.chat_message("assistant"):
+	with st.chat_message("ai"):
 		st.markdown(response)
     # Add assistant response to chat history
 	st.session_state.messages.append({"role": "assistant", "content": response})
